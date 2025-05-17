@@ -1,2 +1,50 @@
+import java.util.Scanner;
 public class Oddonacci_Linear {
+    public static void main(String args[]) {
+        // start off with 1, 1, 1, then the next number is the addition of the last 3
+        Scanner kb = new Scanner(System.in);
+        System.out.print("Please input a number ");
+        int user_input = kb.nextInt();
+        int result = Oddonacci(user_input)[0];
+        System.out.println("Your number is " + result);
+    }
+
+    public static int[] Oddonacci(int x) {
+        //creates an array to store previous values
+        int[] a = new int[3];
+        int i = 0;
+        int j = 0;
+        int k = 0;
+        //base case
+        if(x==1 || x==2 || x==3 ) {
+            //assigns the starting values
+            a[0] = 1;
+            a[1] = 1;
+            a[2] = 1;
+            //returns the array with the previous values of Oddonacci
+            return a;
+        }
+        //x>3
+        else{
+            //gets array of previous value of Oddonacci
+            a = Oddonacci(x-1);
+            //value at x-1
+            i = a[0];
+            //values at x-2
+            j = a[1];
+            //values at x-3
+            k = a[2];
+            // value at given x
+            int next = i + j + k;
+            //assinging back to array value at x, x-1, x-2
+            a[0] = next;
+            a[1] = i;
+            a[2] = j;
+            //returns array
+            return (a);
+        }
+
+//        return Oddonacci(x-1) + Oddonacci(x-2) + Oddonacci(x-3);
+    }
 }
+
