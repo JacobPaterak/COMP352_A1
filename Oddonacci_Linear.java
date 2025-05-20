@@ -1,13 +1,30 @@
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 public class Oddonacci_Linear {
-    public static void main(String args[]) {
+    public static void main(String args[]) throws FileNotFoundException, IOException {
         // start off with 1, 1, 1, then the next number is the addition of the last 3
-        Scanner kb = new Scanner(System.in);
-        System.out.print("Please input a number ");
-        int user_input = kb.nextInt();
-        int result = Oddonacci(user_input)[0];
-        System.out.println("Your number is " + result);
+        BufferedWriter bw  = new BufferedWriter( new FileWriter("OddoOut.txt"));
+        for(int i = 5; i<= 200; i = i+5)
+        {
+            try {
+                long start = System.nanoTime();
+                int value = Oddonacci(i)[0];
+                long end = System.nanoTime();
+                long time = end - start;
+                bw.write("" + value + " and took " + time + "ms");
+                bw.newLine();
+
+            }
+            catch(Exception e){
+
+            }
+            finally{
+
+            }
+        }
+    bw.close();
     }
+
 
     public static int[] Oddonacci(int x) {
         //creates an array to store previous values
@@ -44,7 +61,6 @@ public class Oddonacci_Linear {
             return (a);
         }
 
-//        return Oddonacci(x-1) + Oddonacci(x-2) + Oddonacci(x-3);
     }
 }
 
