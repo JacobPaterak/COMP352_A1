@@ -24,6 +24,7 @@ public class Oddonacci_Multiple {
                outputStream.println("Itteration: " + i + ", Oddo Value: " + value + ", System Time: " + duration + " milliseconds" );
                //increment i by 5;
                i += 5;
+
            }
 
        } catch (FileNotFoundException e) {
