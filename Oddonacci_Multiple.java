@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.io.*;
 
 public class Oddonacci_Multiple {
     public static void main(String[] args) {
@@ -6,7 +7,32 @@ public class Oddonacci_Multiple {
 
        System.out.print("Enter desired oddonacci itteration: ");
        int input = kb.nextInt();
-       System.out.print("The number is: " + oddonacci(input));
+
+       PrintWriter outputStream = null;
+       try {
+           //set output stream to append
+           outputStream = new PrintWriter(new FileOutputStream("OddoOutMultiple.txt"));
+           outputStream.println("Java Runtime test file");
+           for (int i = 5; i <= input; ){
+
+               //compute the time in ns that the oddonacci program takes
+               long start = System.nanoTime();
+               int value = oddonacci(i);
+               long end = System.nanoTime();
+               long duration  = (end - start)/1000000;
+               System.out.println(duration);
+               outputStream.println("Itteration: " + i + ", Oddo Value: " + value + ", System Time: " + duration + " milliseconds" );
+               //increment i by 5;
+               i += 5;
+           }
+
+       } catch (FileNotFoundException e) {
+           throw new RuntimeException(e);
+       }
+       finally{
+           outputStream.close();
+       }
+
        kb.close();
     }
 
