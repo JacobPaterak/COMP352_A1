@@ -1,4 +1,5 @@
-b,)
+b,) The first algorithm which uses multiple calls (Oddonacci_Multiple) simply requires the method to return oddonacci(x-1) + ..(x-2) +...(x-3).
+For each itteration in the oddonacci sequence the system must call the the method 3 times and each time it must itterate back to the base case. For that reason this program has a time complexity of O(3^x). The second algorithm of linear complexity prevents the bottle neck of having to itterate back to the base case (which becomes exponentially more time consuming) by storing the previous three integers in an array. This drastically improves the speed of the algorithm changing it to O(n).
 
 
 c,) No it is not a tail Recursive algorithm because the call to the function is not the last thing to happen
