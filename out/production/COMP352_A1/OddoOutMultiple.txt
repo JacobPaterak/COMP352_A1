@@ -1,0 +1,3 @@
+Java Runtime test file
+Itteration: 5, Oddo Value: 5, System Time: 0 milliseconds
+Itteration: 10, Oddo Value: 105, System Time: 0 milliseconds

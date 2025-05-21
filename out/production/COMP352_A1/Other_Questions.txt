@@ -1,0 +1,6 @@
+b,)
+
+
+c,) No it is not a tail Recursive algorithm because the call to the function is not the last thing to happen
+    ii,)The tail recursive algorithm cannot be made because you have to call the method multiple times and add
+        them for you to get the right answer example Oddonnacci(4) = Oddonnacci(3) + Oddonnacci(2) + Oddonnacci(1)
