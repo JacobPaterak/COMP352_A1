@@ -49,6 +49,7 @@ public class Oddonacci_Multiple {
        kb.close();
     }
 
+
     public static int oddonacci(int x){
         if (x == 1 || x == 2 || x == 3){
             return 1;
