@@ -22,4 +22,7 @@ Itteration: 39, Oddo Value: 668475985, System Time: 14 seconds
 Itteration: 41, Oddo Value: -388660839, System Time: 50 seconds
 Itteration: 43, Oddo Value: 969676097, System Time: 168 seconds
 Itteration: 45, Oddo Value: -1106123859, System Time: 573 seconds
+
 Notice past itteration 45, the code becomes exponentially long and unfeasable to run
+Each new itteration takes more than 3 times longer, by itteration 50 it would take 38 hours.
+Oddonacci(200) would never compute in our liftime with this algorithm.
