@@ -5,6 +5,7 @@ public class Oddonacci_Multiple {
     public static void main(String[] args) {
        Scanner kb = new Scanner(System.in);
 
+
        System.out.print("Enter desired oddonacci itteration: ");
        int input = kb.nextInt();
 
