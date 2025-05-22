@@ -13,7 +13,7 @@ public class Oddonacci_Multiple {
            //set output stream to append
            outputStream = new PrintWriter(new FileOutputStream("OddoOutMultiple.txt"));
            outputStream.println("Java Runtime test file");
-           for (int i = 5; i <= input; ){
+           for (int i = 1; i <= input; ){
 
                //compute the time in ns that the oddonacci program takes
                long start = System.nanoTime();
@@ -21,12 +21,24 @@ public class Oddonacci_Multiple {
                long end = System.nanoTime();
                long duration  = (end - start)/1000000;
                System.out.println(duration);
-               outputStream.println("Itteration: " + i + ", Oddo Value: " + value + ", System Time: " + duration + " milliseconds" );
+
+               if (duration < 5000) {
+                   outputStream.println("Itteration: " + i + ", Oddo Value: " + value + ", System Time: " + duration + " milliseconds");
+               }
+
+               if (duration >= 5000 && duration <= 60000){
+                   duration = duration/1000;
+                   outputStream.println("Itteration: " + i + ", Oddo Value: " + value + ", System Time: " + duration + " seconds");
+               }
+
+               if (duration >= 60000){
+                   duration = duration/60000;
+                   outputStream.println("Itteration: " + i + ", Oddo Value: " + value + ", System Time: " + duration + " minutes");
+               }
                //increment i by 5;
-               i += 5;
-
+               i += 2;
            }
-
+           outputStream.println("Notice past itteration 45, the code becomes exponentially long and unfeasable to run");
        } catch (FileNotFoundException e) {
            throw new RuntimeException(e);
        }

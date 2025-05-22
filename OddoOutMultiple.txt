@@ -1,3 +1,25 @@
 Java Runtime test file
+Itteration: 1, Oddo Value: 1, System Time: 0 milliseconds
+Itteration: 3, Oddo Value: 1, System Time: 0 milliseconds
 Itteration: 5, Oddo Value: 5, System Time: 0 milliseconds
-Itteration: 10, Oddo Value: 105, System Time: 0 milliseconds
+Itteration: 7, Oddo Value: 17, System Time: 0 milliseconds
+Itteration: 9, Oddo Value: 57, System Time: 0 milliseconds
+Itteration: 11, Oddo Value: 193, System Time: 0 milliseconds
+Itteration: 13, Oddo Value: 653, System Time: 0 milliseconds
+Itteration: 15, Oddo Value: 2209, System Time: 0 milliseconds
+Itteration: 17, Oddo Value: 7473, System Time: 0 milliseconds
+Itteration: 19, Oddo Value: 25281, System Time: 0 milliseconds
+Itteration: 21, Oddo Value: 85525, System Time: 0 milliseconds
+Itteration: 23, Oddo Value: 289329, System Time: 1 milliseconds
+Itteration: 25, Oddo Value: 978793, System Time: 3 milliseconds
+Itteration: 27, Oddo Value: 3311233, System Time: 10 milliseconds
+Itteration: 29, Oddo Value: 11201821, System Time: 33 milliseconds
+Itteration: 31, Oddo Value: 37895489, System Time: 112 milliseconds
+Itteration: 33, Oddo Value: 128199521, System Time: 381 milliseconds
+Itteration: 35, Oddo Value: 433695873, System Time: 1290 milliseconds
+Itteration: 37, Oddo Value: 1467182629, System Time: 4358 milliseconds
+Itteration: 39, Oddo Value: 668475985, System Time: 14 seconds
+Itteration: 41, Oddo Value: -388660839, System Time: 50 seconds
+Itteration: 43, Oddo Value: 969676097, System Time: 168 seconds
+Itteration: 45, Oddo Value: -1106123859, System Time: 573 seconds
+Notice past itteration 45, the code becomes exponentially long and unfeasable to run
